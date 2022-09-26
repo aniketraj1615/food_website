@@ -1,0 +1,213 @@
+*{
+    margin: 4px;
+    padding: 0px;
+}
+#navbar{
+    
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+    border-radius: 15px;
+   
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 96%;
+    width:100%;
+     z-index: -1;
+    opacity: 0.3;
+    border-radius: 30px;
+}
+/* logo styling */
+#logo{
+   
+
+}
+#logo img{
+    opacity: 1;
+    height: 85px;
+    width: 85px;
+}
+/* box styling */
+
+#navbar ul{
+display: flex;
+font-style: italic;
+font-size: 1.4rem;
+}
+#navbar ul li{
+    list-style: none;
+    
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 8px;
+
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+}
+/* home section decoration */
+#home{
+    color: white;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+padding-top: 100px;
+padding-left: 50px;
+justify-content: center;
+align-items: center;
+height: 600px;
+}
+.btn{
+    color: white;
+    background-color: rgb(26, 19, 19);
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: large;
+}
+#home::before{
+    content: "";
+    background:url(./bg111.jpg) no-repeat center center/cover;
+    
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 75%;
+    width:100%;
+     z-index: -1;
+    opacity: 1;
+    border-radius: 30px;
+}
+
+#home h1{
+    text-align: center;
+    font-size: 3.8rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.services-container h1{
+    font-size: 3.4rem;
+}
+#home p{
+    text-align: center;
+    font-size: 1.4rem;
+}
+#services{
+display: flex;
+margin: 40px;
+
+}
+#services .box{
+    border: 2px solid black;
+    background-color: rgb(224, 226, 227);
+}
+#services .box img{
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+.h-secondary center{
+    font-family: 'Bree serif' ,serif ;
+    font-size: 1.25rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+    
+}
+#clients{
+display: flex;
+}
+#clients img{
+    height: 175px;
+    /* width: 12px; */
+    padding: 50px;
+    margin: 65px;
+}
+.client-item img{
+    padding: 30px;
+    /* height: 12px; */
+}
+.client-items{
+   
+    justify-content: center;
+    
+}
+.h1-primary.center{
+    font-size: 3.4rem;
+}
+#our-clients::before{
+    content:"";
+    background:url(./bg.jpg);
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.5;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    
+    content: "";
+    background:url(./contact.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+}
+.contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contact-box label{
+    width: 100px;
+    font-size: 1.5rem;
+}
+.contact-box textarea{
+    width: 175px;
+    height: 20%;
+    border-radius: 10px;
+}
+.contact-box input{
+    
+    border-radius: 8px;
+}
+.contact-box form{
+    
+}
+.form-group{
+    
+    
+    margin: 5px;
+
+}
+.center{
+    margin: 34px;
+}
+html{
+    scroll-behavior: smooth;
+}
